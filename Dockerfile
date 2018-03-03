@@ -7,7 +7,7 @@ RUN dnf update -y && \
     dnf clean all
 
 RUN pip install --upgrade pip && \
-    pip install Jinja2 && \
+    pip install Jinja2 requests && \
     pip install ansible
 
 RUN mkdir -p /etc/ansible && \
