@@ -3,7 +3,7 @@ FROM fedora:latest
 MAINTAINER Afahounko Danny <danny@afahounko.com>
 
 RUN dnf update -y && \
-    dnf -y install python python-netaddr python2-pip  openssl-devel openssl && \
+    dnf -y install python python-netaddr python2-pip  openssl-devel openssl  jq && \
     dnf clean all
 
 RUN pip install --upgrade pip && \
