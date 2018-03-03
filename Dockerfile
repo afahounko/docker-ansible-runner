@@ -14,4 +14,4 @@ RUN mkdir -p /etc/ansible && \
     echo 'localhost' > /etc/ansible/hosts
 
 # default command: display Ansible version
-CMD [ "ansible-playbook", "--version" ]
+CMD [ "ansible", "--version" ]
